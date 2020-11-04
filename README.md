@@ -9,12 +9,14 @@
  - [Subdomain Takeover](https://github.com/devanshbatham/Awesome-Bugbounty-Writeups#subdomain-takeover)
  - [Denial of Service (DOS)](https://github.com/devanshbatham/Awesome-Bugbounty-Writeups#denial-of-service-dos)
  - [Authentication Bypass](https://github.com/devanshbatham/Awesome-Bugbounty-Writeups#authentication-bypass)
- - [SQL injection](https://github.com/devanshbatham/Awesome-Bugbounty-Writeups#sql-injectionsqli) 
+ - [SQL injection](https://github.com/devanshbatham/Awesome-Bugbounty-Writeups#sql-injectionsqli)
+ - [Insecure Direct Object Reference (IDOR)](https://github.com/devanshbatham/Awesome-Bugbounty-Writeups#insecure-direct-object-reference-idor)
  - [2FA Related issues](https://github.com/devanshbatham/Awesome-Bugbounty-Writeups#2fa-related-issues) 
  - [CORS Related issues](https://github.com/devanshbatham/Awesome-Bugbounty-Writeups#cors-related-issues)
  - [Server Side Request Forgery (SSRF)](https://github.com/devanshbatham/Awesome-Bugbounty-Writeups/blob/master/README.md#server-side-request-forgery-ssrf)
  - [Race Condition](https://github.com/devanshbatham/Awesome-Bugbounty-Writeups/blob/master/README.md#race-condition)
- - [Remote Code Execution (RCE)](https://github.com/devanshbatham/Awesome-Bugbounty-Writeups#remote-code-execution-rce)  
+ - [Remote Code Execution (RCE)](https://github.com/devanshbatham/Awesome-Bugbounty-Writeups#remote-code-execution-rce)
+ - [Android Pentesting](https://github.com/devanshbatham/Awesome-Bugbounty-Writeups#android-pentesting) 
  - [Contributing](https://github.com/devanshbatham/Awesome-Bugbounty-Writeups#contributing)
  - [Maintainers](https://github.com/devanshbatham/Awesome-Bugbounty-Writeups#maintainers)
 
@@ -48,6 +50,7 @@
 - [Blind XSS : a mind Game ](https://medium.com/@dirtycoder0124/blind-xss-a-mind-game-to-win-the-battle-4fc67c524678?)
 - [FireFox IOS QR code reader XSS(CVE-2019-17003)](https://payatu.com/blog/nikhil-mittal/firefox-ios-qr-code-reader-xss-(cve-2019-17003))
 - [HTML injection to XSS](https://evanricafort.blogspot.com/2019/12/html-injection-to-xss-bypass-in.html)
+- [CVE-2020-13487 | Authenticated Stored Cross-site Scripting in bbPress](https://hackerone.com/reports/881918)
 - [XSS at error page of repository code ](https://medium.com/@navne3t/150-xss-at-error-page-of-respository-code-4fc628892742)
 - [XSS like a Pro](https://www.hackerinside.me/2019/12/xss-like-pro.html)
 - [How I turned self XSS to stored XSS via CSRF](https://medium.com/@abhishake100/how-i-turned-self-xss-to-stored-via-csrf-d12eaaf59f2e)
@@ -121,7 +124,6 @@
 - [Facebook stored XSS](https://buer.haus/2014/06/16/facebook-stored-cross-site-scripting-xss-badges/)
 - [Ebay mobile reflected XSS](https://thehackerblog.com/ebay-mobile-reflected-xss-disclosure-writeup/index.html)
 - [Magix bugbounty XSS writeup](https://www.rcesecurity.com/2014/04/magix-bug-bounty-magix-com-rce-sqli-and-xara-com-lfi-xss/)
-- [imgur XSS](http://blog.shashank.co/2013/12/imgur-xss.html)
 - [Abusing CORS for an XSS on flickr ](https://whitton.io/articles/abusing-cors-for-an-xss-on-flickr/)
 - [XSS on google groups ](https://manuel-sousa.blogspot.com/2013/11/xss-google-groups-groupsgooglecom.html)
 - [Oracle XSS](http://blog.shashank.co/2013/11/oracle-xss.html)
@@ -504,6 +506,14 @@
 - [Tesla Motors blind SQLI](https://bitquark.co.uk/blog/2014/02/23/tesla_motors_blind_sql_injection)
 - [SQLI in Nokia Sites](https://josipfranjkovic.blogspot.com/2013/07/sql-injections-in-nokia-sites.html)
 
+## Insecure Direct Object Reference (IDOR)
+
+- [Disclose Private Dashboard Chart's name and data in Facebook Analytics](https://bugreader.com/jubabaghdad@disclose-private-dashboard-charts-name-and-data-in-facebook-analytics-184)
+- [Disclosing privately shared gaming clips of any user](https://bugreader.com/rony@disclosing-privately-shared-gaming-clips-of-any-user-128)
+- [Adding anyone including non-friend and blocked people as co-host in personal event!](https://bugreader.com/binit@adding-anyone-including-non-friend-and-blocked-people-as-co-host-in-personal-event-181)
+- [Page analyst could view job application details](https://bugreader.com/rony@page-analyst-could-view-job-application-details-213)
+- [Deleting Anyone's Video Poll](https://bugreader.com/testgrounds@deleting-anyones-video-poll-175)
+
 ## 2FA related issues
 
 - [2FA Bypass via logical rate limiting Bypass](https://medium.com/@jeppe.b.weikop/2fa-bypass-via-logical-rate-limiting-bypass-25ae2a4e1835)
@@ -577,8 +587,10 @@
 - [Race condition bypassing team limit](https://medium.com/@arbazhussain/race-condition-bypassing-team-limit-b162e777ca3b)
 - [Race condition on web](https://www.josipfranjkovic.com/blog/race-conditions-on-web)
 - [Race condition bugs on Facebook](https://josipfranjkovic.blogspot.com/2015/04/race-conditions-on-facebook.html)
-
-
+- [Hacking Banks With Race Conditions](https://medium.com/swlh/hacking-banks-with-race-conditions-2f8d55b45a4b)
+- [Race Condition Bug In Web App: A Use Case](https://medium.com/@ciph3r7r0ll/race-condition-bug-in-web-app-a-use-case-21fd4df71f0e)
+- [RACE Condition vulnerability found in bug-bounty program](https://medium.com/@pravinponnusamy/race-condition-vulnerability-found-in-bug-bounty-program-573260454c43)
+- [How to check Race Conditions in Web Applications](https://medium.com/@valeriyshevchenko/how-to-check-race-conditions-in-web-applications-338f73937992)
 
 ## Remote Code Execution (RCE) 
 
@@ -650,6 +662,19 @@
 - [eBay Source Code leak](https://slashcrypto.org/2018/11/28/eBay-source-code-leak/)
 - [Facebook source code disclosure in ads API](https://www.amolbaikar.com/facebook-source-code-disclosure-in-ads-api/)
 - [XS-Searching Google’s bug tracker to find out vulnerable source code](https://medium.com/@luanherrera/xs-searching-googles-bug-tracker-to-find-out-vulnerable-source-code-50d8135b7549)
+
+## Buffer Overflow Writeups
+
+-[Buffer Overflow Attack Book pdf](http://www.cis.syr.edu/~wedu/seed/Book/book_sample_buffer.pdf)
+-[Github Reposirtory on Buffer Overflow Attack](https://github.com/npapernot/buffer-overflow-attack)
+-[Stack-Based Buffer Overflow Attacks: Explained and Examples](https://blog.rapid7.com/2019/02/19/stack-based-buffer-overflow-attacks-what-you-need-to-know/)
+-[How Buffer Overflow Attacks Work](https://www.netsparker.com/blog/web-security/buffer-overflow-attacks/)
+-[Binary Exploitation: Buffer Overflows](https://blog.usejournal.com/binary-exploitation-buffer-overflows-a9dc63e8b546)
+-[WHAT IS A BUFFER OVERFLOW? LEARN ABOUT BUFFER OVERRUN VULNERABILITIES, EXPLOITS & ATTACKS](https://www.veracode.com/security/buffer-overflow)
+
+## Android Pentesting
+
+-[Android Pentesting Lab (Step by Step guide for beginners!)](https://medium.com/bugbountywriteup/android-pentesting-lab-4a6fe1a1d2e0)
 
 ## Contributing 
 - Open Pull Requests
